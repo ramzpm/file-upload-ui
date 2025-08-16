@@ -112,7 +112,7 @@ const FileUpload = () => {
     const checkStatus = async () => {
       try {
 
-        const domain = 'https://jb2shsmmal.execute-api.us-east-1.amazonaws.com'
+        const domain = process.env.REACT_APP_API_URL;
         const res = await fetch(`${domain}/file-upload/${fileId}`);
         const data = await res.json();
         console.log("Polling status:", data.uploadedStatus);
