@@ -6,7 +6,7 @@ import './style.css';
 const apiCall = {
   getUploadConfig: async (filename) => {
     try {
-      const domain = 'https://jb2shsmmal.execute-api.us-east-1.amazonaws.com'
+      const domain = 'https://xk8mpocecd.execute-api.us-east-1.amazonaws.com'
       const url = `${domain}/presign?filename=${encodeURIComponent(filename)}`;
       const response = await fetch(url, { method: 'GET', headers: { 'Content-Type': 'application/json' } });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
