@@ -176,7 +176,7 @@ const FileUpload = () => {
       clearInterval(progressInterval);
       setUploadProgress(100);
       setUploadTime(performance.now() - startTime);
-      setMessage({ type: 'info', text: 'Upload completed. Checking processing status...' });
+      setMessage({ type: 'info', text: 'Upload completed. Scanning for Virus..' });
 
       // Start polling after upload
       setIsScanning(true);
