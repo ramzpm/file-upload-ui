@@ -253,7 +253,7 @@ const FileUpload = () => {
                     <div><strong>Name:</strong> {selectedFile.name}</div>
                     <div><strong>Size:</strong> {formatFileSize(selectedFile.size)}</div>
                     <div><strong>Type:</strong> {selectedFile.type || 'Unknown'}</div>
-                    {uploadTime && <div><strong>Upload Time:</strong> {formatUploadTime(uploadTime)} ⚡</div>}
+                  
                   </div>
                 </div>
               )}
